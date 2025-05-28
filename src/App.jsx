@@ -9,10 +9,14 @@ import CubeScene from './components/three/CubeScene';
 
 function App() {
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
-      <h1>Mi Proyecto React + 3D</h1>
-      <CubeScene />
-    </div>
+    <section style={{ display: 'flex', flexDirection: 'row' }}>
+      <div style={{ width: '100vw', height: '100vh', backgroundColor: 'black' }}>
+          <h1>Mi Proyecto React + 3D</h1>
+      </div>
+      <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
+          <CubeScene />
+      </div>
+    </section>
   );
 }
 
