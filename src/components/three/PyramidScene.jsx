@@ -1,19 +1,19 @@
-// src/components/three/CubeScene.js
+// src/components/three/PyramidScene.js
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Box } from '@react-three/drei';
+import { OrbitControls, Cone } from '@react-three/drei';
 
-export default function CubeScene() {
+export default function PyramidScene() {
+
   return (
     <Canvas>
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-      <Box position={[0, 0, 0]}>
+      <Cone position={[0, 0, 0]} args={[1, 1, 4]}>
         <meshStandardMaterial 
-          color="black"
-          wireframe
-          wireframeColor="black"
+          color="red"
+          wireframeColor="white"
         />
-      </Box>
+      </Cone>
       <OrbitControls />
     </Canvas>
   );

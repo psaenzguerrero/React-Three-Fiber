@@ -4,7 +4,7 @@
 // import './App.css'
 // import CubeScene from './CubeScene';
 
-
+import PyramidScene from './components/three/PyramidScene';
 import CubeScene from './components/three/CubeScene';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
     <section style={{ display: 'flex', flexDirection: 'row' }}>
       <div style={{ width: '100vw', height: '100vh', backgroundColor: 'black' }}>
           <h1>Mi Proyecto React + 3D</h1>
+          <PyramidScene />
       </div>
       <div style={{ width: '100vw', height: '100vh', backgroundColor: 'white' }}>
           <CubeScene />
