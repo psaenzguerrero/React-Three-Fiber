@@ -11,7 +11,8 @@ export default function PyramidScene() {
       <Cone position={[0, 0, 0]} args={[1, 1, 4]}>
         <meshStandardMaterial 
           color="red"
-          wireframeColor="white"
+          wireframeColor="red"
+          wireframe
         />
       </Cone>
       <OrbitControls />
