@@ -20,7 +20,7 @@ function MovingSphere() {
   useFrame((state, delta) => {
     if (sphereRef.current) {
       sphereRef.current.rotation.x += delta * 0.5; // Rotate along X axis
-      sphereRef.current.rotation.y += delta * 0.5; // Rotate along Y axis
+      sphereRef.current.rotation.y += delta * 1; // Rotate along Y axis
     }
   });
 

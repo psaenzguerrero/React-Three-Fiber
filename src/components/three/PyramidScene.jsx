@@ -1,4 +1,3 @@
-// src/components/three/PyramidScene.js
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Cone } from '@react-three/drei';
 
